@@ -1,0 +1,20 @@
+[11:38:07] [main/INFO]: Loading Minecraft 1.20.1 with Fabric Loader 0.16.3
+[11:38:07] [main/INFO]: Fabric is preparing JARs on first launch, this may take a few seconds...
+[11:38:08] [main/WARN]: Mod resolution failed
+[11:38:08] [main/INFO]: Immediate reason: [HARD_DEP_NO_CANDIDATE sounds 2.0.4+1.20.1+fabric {depends mru @ [~1.0.0+1.20.1+fabric]}, ROOT_FORCELOAD_SINGLE sounds 2.0.4+1.20.1+fabric]
+[11:38:08] [main/INFO]: Reason: [HARD_DEP sounds 2.0.4+1.20.1+fabric {depends mru @ [~1.0.0+1.20.1+fabric]}]
+[11:38:08] [main/INFO]: Fix: add [add:mru 1.0.0+1.20.1+fabric ([[1.0.0+1.20.1+fabric,1.1-)])], remove [], replace []
+[11:38:08] [main/ERROR]: Incompatible mods found!
+net.fabricmc.loader.impl.FormattedException: Some of your mods are incompatible with the game or each other!
+A potential solution has been determined, this may resolve your problem:
+	 - Install mru, any version between 1.0.0+1.20.1+fabric (inclusive) and 1.1- (exclusive).
+More details:
+	 - Mod 'Sounds' (sounds) 2.0.4+1.20.1+fabric requires any version between 1.0.0+1.20.1+fabric (inclusive) and 1.1- (exclusive) of mru, which is missing!
+	at net.fabricmc.loader.impl.FormattedException.ofLocalized(FormattedException.java:51) ~[fabric-loader-0.16.3.jar:?]
+	at net.fabricmc.loader.impl.FabricLoaderImpl.load(FabricLoaderImpl.java:196) ~[fabric-loader-0.16.3.jar:?]
+	at net.fabricmc.loader.impl.launch.knot.Knot.init(Knot.java:146) ~[fabric-loader-0.16.3.jar:?]
+	at net.fabricmc.loader.impl.launch.knot.Knot.launch(Knot.java:68) ~[fabric-loader-0.16.3.jar:?]
+	at net.fabricmc.loader.impl.launch.knot.KnotClient.main(KnotClient.java:23) ~[fabric-loader-0.16.3.jar:?]
+	at org.prismlauncher.launcher.impl.StandardLauncher.launch(StandardLauncher.java:100) ~[?:?]
+	at org.prismlauncher.EntryPoint.listen(EntryPoint.java:129) ~[?:?]
+	at org.prismlauncher.EntryPoint.main(EntryPoint.java:70) ~[?:?]
